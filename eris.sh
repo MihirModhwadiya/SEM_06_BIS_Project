@@ -33,22 +33,22 @@ INFO="${YELLOW}[${BWHITE}+${YELLOW}] ${LYELLOW}"
 INFO2="${GREEN}[${BWHITE}•${GREEN}] ${BGGRAY}"
 ASK="${GREEN}[${BWHITE}?${GREEN}] ${BBLUE}"
 
-#show_banner() {
-#    echo -e "${LGREEN}      _____      _     ____  _     _     _               _               ${RESET}"
-#    echo -e "${GREEN}     | ____|_ __(_)___|  _ \| |__ (_)___| |__   ___ _ __(_)_ __   __ _   ${RESET}"
-#    echo -e "${LGREEN}     |  _| | '__| / __| |_) | '_ \| / __| '_ \ / _ \ '__| | '_ \ / _\` | ${RESET}"
-#    echo -e "${GREEN}     | |___| |  | \__ \  __/| | | | \__ \ | | |  __/ |  | | | | | (_| |  ${RESET}"
-#    echo -e "${LGREEN}     |_____|_|  |_|___/_|   |_| |_|_|___/_| |_|\___|_|  |_|_| |_|\__, |  ${RESET}"
-#    echo -e "${GREEN}                                ${RED}[${VERSION}]${GREEN}                            |___/  ${RESET}"
-#    echo -e "${LGREEN}                             ${RED}[By ${AUTHOR}]                                ${RESET}"
-#    echo
-#}
+show_banner() {
+    # echo -e "${LGREEN}      _____      _     ____  _     _     _               _               ${RESET}"
+    echo -e "${GREEN}  Mihir V. Modhwadiya  ${RESET}"
+    echo -e "${LGREEN}  Mihir V. Modhwadiya  ${RESET}"
+    echo -e "${GREEN}  Mihir V. Modhwadiya  ${RESET}"
+    echo -e "${LGREEN}  Mihir V. Modhwadiya  ${RESET}"
+    # echo -e "${GREEN}                                ${RED}[${VERSION}]${GREEN}                            |___/  ${RESET}"
+    # echo -e "${LGREEN}                             ${RED}[By ${AUTHOR}]                                ${RESET}"
+    echo
+}
 
 main() {
     clear
 
     if command -v python3 &>/dev/null; then
-        # show_banner
+        show_banner
 
         COUNTER_L=0
         if [ -e "$CONFIG_FILE" ]; then

