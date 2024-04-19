@@ -35,10 +35,10 @@ ASK="${GREEN}[${BWHITE}?${GREEN}] ${BBLUE}"
 
 show_banner() {
     # echo -e "${LGREEN}      _____      _     ____  _     _     _               _               ${RESET}"
-    echo -e "${GREEN}  Mihir V. Modhwadiya  ${RESET}"
-    echo -e "${LGREEN}  Mihir V. Modhwadiya  ${RESET}"
-    echo -e "${GREEN}  Mihir V. Modhwadiya  ${RESET}"
-    echo -e "${LGREEN}  Mihir V. Modhwadiya  ${RESET}"
+    echo -e "${GREEN}  Mihir Modhwadiya (216270307033)  ${RESET}"
+    echo -e "${LGREEN}  Bhusan Joshi (21627030705050) ${RESET}"
+    echo -e "${GREEN}  Soneirsinh Jadeja (216270307038) ${RESET}"
+    echo -e "${LGREEN}  Aarti Rathod (216270307039) ${RESET}"
     # echo -e "${GREEN}                                ${RED}[${VERSION}]${GREEN}                            |___/  ${RESET}"
     # echo -e "${LGREEN}                             ${RED}[By ${AUTHOR}]                                ${RESET}"
     echo
@@ -63,8 +63,8 @@ main() {
         fi
 
         echo -e "${SUCCESS} Clean code, starting $ERIS phisher... ${RESET}"
-        #loading  
-        #loading  
+        #loading
+        #loading
         python3 "$ERIS_PATH"
         echo
     else
