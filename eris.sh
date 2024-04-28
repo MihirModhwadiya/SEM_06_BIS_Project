@@ -44,6 +44,7 @@ show_banner() {
     echo
 }
 
+
 main() {
     clear
 
